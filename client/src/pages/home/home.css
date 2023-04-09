@@ -1,0 +1,7 @@
+.text{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: 100vh;
+}
