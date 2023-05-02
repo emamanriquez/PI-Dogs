@@ -1,21 +1,31 @@
 import './App.css';
-import Sidebar from './components/sidebar/sidebar';
 import Home from './pages/home/home';
-import landingPage from './pages/landingPage/landingPage'
-import dogDetail from './pages/dogDetail/dogDetail';
-import { BrowserRouter, Switch, Route, } from "react-router-dom";
+import landingPage from './pages/landingPage/landingPage';
+import DogDetail from './pages/dogDetail/dogDetail';
+import { Route, Routes  } from "react-router-dom";
+import About from './pages/About/about';
+import createBreed from './pages/createBreed/createBreed';
+
+
+
 
 function App() {
+  
+  
+
   return (
     <div className="App">
-      <BrowserRouter>
-      <Sidebar />
-      <Switch>
-      <Route path="/" component= { landingPage } />
-      <Route path="/home" component= { Home } />
-      <Route path="/dog/:id" component={ dogDetail } />
-      </Switch>
-      </BrowserRouter>
+   
+      
+      <Routes>
+      <Route path="/" Component= { landingPage } />
+      <Route path="/home" Component= { Home } />
+      <Route path="/dogs/:id" Component={ DogDetail } />
+      <Route path="/create" Component= { createBreed } />
+      <Route path="/About" Component= { About } />
+      </Routes>
+      
+    
     </div>
   );
 }

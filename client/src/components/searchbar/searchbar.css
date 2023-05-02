@@ -1,0 +1,37 @@
+.searchName {
+  color: blue;
+  left: 37vw;
+  bottom: 15vh;
+  width: 16vw;
+  height: 5.6vh;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: none;
+  font-style: trebuchet;
+  font-weight: 600;
+  font-size: 1rem;
+   margin-top: -10px;
+    margin-left: -200px;
+}
+
+.btnPatita {
+ background-image: url(../../img/fotopata.png);
+  left: 37vw;
+  bottom: 12.6vh;
+  background-repeat:no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  width: 40px;
+  height: 6vh;
+  cursor: pointer;
+      margin-top: -28px;
+    margin-left: 200px;
+}
+
+
+
+.buttom{
+    
+}

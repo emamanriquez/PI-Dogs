@@ -1,0 +1,144 @@
+/* .container1{
+   position: relative;
+    bottom: 25vh;
+    background-color:rgb(11, 156, 23);
+    box-shadow : 2px 2px 2px rgba(0, 0, 0, 0.4);
+    height: 150px;
+    width: 250px;
+    border-radius: 45px;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-left: 300px;
+}
+
+.container2{
+margin-top: 50px;
+position: relative;
+bottom: 16vh;
+left: 1vw;
+background-color:rgb(255, 255, 255);
+height: 25vh;
+width: 13vw;
+text-align: center;
+
+}
+
+.breedimage{
+    height: 150px;
+    border-radius: 50px;
+}
+
+.namedog{
+margin-left: 500px;
+bottom:18vh;
+left: 5vw;
+color: rgb(20, 20, 20);
+background-color: rgb(255, 255, 255);
+height: 12vh;
+width: 20vw;
+font-style: Trebuchet;
+font-weight: 760;
+font-size: 30px;
+line-height : 40px;  
+}
+
+.containerT{
+
+color: rgb(15, 15, 15);
+font-style: Trebuchet;
+font-weight: 400;
+font-size: 15px; 
+margin-left: 300px;
+display:grid;
+
+}
+
+.nameTemp{
+    position: relative;
+    bottom: 2vh;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+
+
+.containerP{
+    position: relative;
+    top: 9vh;
+    color: rgb(0, 0, 0);
+    font-style: Trebuchet;
+    font-weight: 600;
+    font-size: 1.2rem; 
+    line-height : 12px; 
+   
+}
+
+.numpeso{
+    position: relative;
+    bottom: 2vh;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: blueviolet;
+} */
+
+.containergeneral{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 280px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: baseline;
+   
+}
+
+.container1{
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 10px 3px 25px black;
+    border-radius: 20px;
+    background-color: rgb(149, 165, 166);
+}
+.container2{
+    text-align: center;
+}
+
+.container3{
+    text-align: center;
+}
+
+.namedog{
+    color:orange;
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font: oblique bold 120% cursive;
+}
+
+.breedimage{
+    border-radius: 25px;
+   
+}
+
+.nameTemp{
+    font-size: 1rem;
+   
+}
+
+.numpeso{
+    font-size: 1rem;
+   
+    margin-left: 76px;
+
+}
+
+.textotemp{
+    font: oblique bold 100%;
+    color: black
+}
+
+
+.p{
+    text-decoration: none ;
+
+    color: green;
+}
