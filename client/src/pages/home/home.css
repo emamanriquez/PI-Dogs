@@ -134,7 +134,11 @@
 margin-top: 42px;
 }
 .ubicaTodos select{
-   
+    border-color: cornflowerblue;
+    background-color: #C6DEA6;
+    border-radius: 4px;
+    font-size: 15px;
+    color: black;
    
 }
 /*

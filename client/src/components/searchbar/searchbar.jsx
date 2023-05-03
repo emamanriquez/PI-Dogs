@@ -26,11 +26,7 @@ function handleSubmit (e) {
         <div>
            <div className="buttom">
               <button type="submit" onClick={handleSubmit} className='btnPatita'></button>
-
-            </div>
-           
-               <div className='input'>
-             <input value={name} onChange={handleInputChange} type="text" placeholder="Buscar por raza.."  className="searchName"/>
+              <input className='searchName' value={name} onChange={handleInputChange} type="text" placeholder="Buscar por raza.." />
              </div>
             
            </div>

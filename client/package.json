@@ -15,6 +15,7 @@
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
     "styled-components": "^5.3.6",
+    "testing-library": "^0.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
