@@ -1,0 +1,43 @@
+.tituloCrear{
+    margin-top: 227px;
+    font-weight: bold;
+}
+
+.barraName{
+    border-color: darkcyan;
+background-color: whitesmoke;
+border-radius: 8px;
+}
+
+.barraAlturaMin{
+    border-color: darkcyan;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+
+.barraAlturaMax{
+    border-color: darkcyan;
+background-color: whitesmoke;
+border-radius: 8px;
+}
+
+
+.barraPesoMin{
+    border-color: darkcyan;
+background-color: whitesmoke;
+border-radius: 8px;
+}
+
+.barraPesoMax{
+    border-color: darkcyan;
+background-color: whitesmoke;
+border-radius: 8px;
+}
+
+
+.barraLife{
+border-color: darkcyan;
+background-color: whitesmoke;
+border-radius: 8px;
+}

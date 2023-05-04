@@ -40,15 +40,21 @@
 
 .nameTemp{
     font-size: 1rem;
-   
-}
+    border-color: darkcyan;
+    background-color: #DDCAD9;
+    border-radius: 8px;
+  }
+
 
 .numpeso{
     font-size: 1rem;
    
     margin-left: 76px;
+    border-color: darkcyan;
+    background-color: #DDCAD9;
+    border-radius: 8px;
+  }
 
-}
 
 .textotemp{
     font: oblique bold 100%;

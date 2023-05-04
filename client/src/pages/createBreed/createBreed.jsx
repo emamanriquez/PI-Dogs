@@ -87,13 +87,11 @@ useEffect(() => {
 
 // Inputs 
 const [input, setInput] = useState ({
-      name: '',
-      heightMin: '',
-      heightMax :'',
-      weightMin: '',
-      weightMax: '',
-      life_span: '',
-      temperament: []
+   name: '',
+   height: '',
+   weight: '',
+   life_span: '',
+   temperament: []
 })
 
 
