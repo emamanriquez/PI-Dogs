@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import './createBreed.css'
-import { Link} from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import { useDispatch, useSelector} from "react-redux";
 import { useEffect } from "react";
 import { getAllTemperaments, postRace } from "../../Redux/actions";
@@ -78,7 +78,7 @@ export default function NewRace () {
 
 const dogtemperaments = useSelector ((state) => state.temperaments);
 const dispatch = useDispatch ();
-
+const navigate = useNavigate();
 const [errors, setErrors] = useState ({})
 
 useEffect(() => {
@@ -159,7 +159,7 @@ const handleSubmit = async (e) =>  {
       life_span: '',
       temperament: []
    })
-   
+   navigate('/home')
  }
 }
 

@@ -192,11 +192,11 @@ const getById = async (req, res, next) => {
 //POST 
 const createNewRace = async (req, res) => {
     try{
-        const {name, height,weight,life_span, image, temperament, createdInDb } = req.body;
+        const {name, heightMin, heightMax , weightMin, weightMax, life_span, image, temperament, createdInDb } = req.body;
         const newRace = await Dog.create({
            name,
-           height,
-           weight,
+           height: `${heightMin.trim()} - ${heightMax.trim()}`,
+           weight: `${weightMin.trim()} - ${weightMax.trim()}`,
            life_span,
            image,
            createdInDb
@@ -206,13 +206,36 @@ const createNewRace = async (req, res) => {
               })
             
       await newRace.addTemperament(temperamentDB) 
-      console.log(newRace) 
-      return res.status(200).send({ msg: "successfully created" });
+      //    console.log(newRace) 
+       res.send(newRace) 
     }catch (error) {
         console.log('no anda post')
     }
 
 };
+// const createNewRace = async (req, res) => {
+//     try{
+//         const {name, height,weight,life_span, image, temperament, createdInDb } = req.body;
+//         const newRace = await Dog.create({
+//            name,
+//            height,
+//            weight,
+//            life_span,
+//            image,
+//            createdInDb
+//         })
+//         const temperamentDB = await Temperament.findAll({
+//                 where: { name: temperament },
+//               })
+            
+//       await newRace.addTemperament(temperamentDB) 
+    
+//       return res.status(200).send({ msg: "successfully created" });
+//     }catch (error) {
+//         res.status(400).json(error.message)
+//     }
+
+// };
 
 
 module.exports = {

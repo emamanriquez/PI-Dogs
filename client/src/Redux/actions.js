@@ -63,7 +63,7 @@ export const getAllRace = () => {
     return async function() {
             const response = await axios.post(RUTA_POST, payload);
             console.log(response)
-            return response;
+          return response;
     }
  };
  
