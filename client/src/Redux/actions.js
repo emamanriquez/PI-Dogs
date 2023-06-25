@@ -13,15 +13,15 @@ export const ORDER_BY_PESO_MAX = 'ORDER_BY_PESO_MAX';
 export const POST_BREED = 'POST_BREED';
 
 
-const RUTA_GET = "http://localhost:3001/dogs/get";
-const RUTA_GET_TEMPERAMENT = "http://localhost:3001/temperaments/get";
-const RUTA_POST = "http://localhost:3001/dogs/create";
+// const RUTA_GET = `ruthApp`;
+// const RUTA_GET_TEMPERAMENT = "http://localhost:3001/temperaments/get";
+// const RUTA_POST = "http://localhost:3001/dogs/create";
 
 
 export const getAllRace = () => {
    return async function (dispatch) {
      try {
-       let json = await axios.get(RUTA_GET);
+       let json = await axios.get('dogs/get');
        return dispatch({
          type: GET_ALL_BREED,
          payload: json.data,
@@ -34,13 +34,13 @@ export const getAllRace = () => {
 
  export const getRaceDetail = (payload) => async dispatch => {
   
-    return await fetch(`http://localhost:3001/dogs/${payload}`)
+    return await fetch(`https://pi-dogs-back.up.railway.app/dogs/${payload}`)
     .then (respose => respose.json())
     .then (json => dispatch ({type: GET_DETAIL, payload: json} ))
  }
  
  export const getAllTemperaments = () => async dispatch => {
-    return await fetch(RUTA_GET_TEMPERAMENT)
+    return await fetch(`https://pi-dogs-back.up.railway.app/temperaments/get`)
        .then(respose => respose.json())
        .then (json => dispatch ({type: GET_TEMPERAMENT, payload: json}))
        
@@ -50,7 +50,7 @@ export const getAllRace = () => {
     try {
        
      
-     return await fetch(`${RUTA_GET}/?name=${payload}`)
+     return await fetch(`${`https://pi-dogs-back.up.railway.app/dogs/get`}/?name=${payload}`)
        .then (respose => respose.json())
       .then (json => dispatch ({type: SEARCH_FOR_NAME, payload:json}))
    }catch {
@@ -61,7 +61,7 @@ export const getAllRace = () => {
  
  export function postRace(payload) { 
     return async function() {
-            const response = await axios.post(RUTA_POST, payload);
+            const response = await axios.post(`https://pi-dogs-back.up.railway.app/dogs/create`, payload);
             console.log(response)
           return response;
     }

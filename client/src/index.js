@@ -6,6 +6,10 @@ import { BrowserRouter} from 'react-router-dom';
 //import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux';
 import store from './Redux/store';
+import axios from 'axios';
+
+axios.defaults.baseURL = 'https://pi-dogs-back.up.railway.app/';
+export const ruthApp = 'https://pi-dogs-back.up.railway.app/'
 
 
 ReactDOM.render(
